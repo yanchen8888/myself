@@ -1,0 +1,539 @@
+@charset "UTF-8";
+
+body{
+    overflow: hidden;
+}
+#home{
+    background:url(../img/bg.png) #87b0a5;
+    position: relative;
+}
+#about{
+    background:url(../img/bg.png) #109085;
+}
+#skill{
+    background:url(../img/bg.png) #4d5e8f;
+}
+#undergo{
+    background:url(../img/bg.png) #945c4c;
+}
+#production{
+    background:url(../img/bg.png) #4b85a0;
+}
+#phone{
+    background:url(../img/bg.png) #a29971;
+}
+/*=================================home start=================================*/
+#home,#about,#skill,#undergo,#production,#phone{
+    height: 100vh;
+}
+#home .navbar{
+    background: none;
+    border-bottom: 0;
+    font-size: 2rem;
+   display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+#home .nav i{
+    color: #fff;
+    padding: 15px 15px;
+    margin-right: 3px;
+    transition: .3s;
+    background: none;
+}
+#home .nav i:hover{
+    color: #87b0a5;
+}
+#home .nav i:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:#fff;
+    z-index: -1;
+    transform: scale(0);
+    transition: .3s;
+    border-radius: 60%;
+}
+#home .nav .active i{
+    color:#87b0a5 ;
+}
+#home .nav i:hover:after{
+    transform: scale(1);
+}
+#home .active > a{
+    background: none;
+}
+#home .nav .active i:after{
+    transform: scale(1);
+}
+#home img{
+    width: 168px;
+    height: 250px;
+    transform: rotate(-20deg);
+}
+#home .picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 170px;
+    animation:picture 5s ease-in-out infinite;
+}
+@keyframes picture {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+#home .user h3{
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+    margin: 50px 0 70px 0;
+}
+#home .user p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 38px;
+}
+#home .toAbout{
+    display: block;
+    width: 18px;
+    height: 38px;
+    position: absolute;
+    z-index: 111111111;
+    bottom: 5%;
+    left: 50%;
+    margin: 0 0 0 -15px;
+}
+#home .toAbout:before{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+    animation:middle 1.5s ease-in-out infinite;
+}
+@keyframes middle {
+    0%{margin-top: -10px;opacity: 0}
+    70%{margin-top: 10px;opacity: 1}
+    100%{margin-top: 20px;opacity: 0}
+}
+@media (max-width: 768px) {
+    #home .navbar{
+        width: 100%;
+    }
+    #home .nav i{
+        text-align: center;
+        width: 100%;
+    }
+    #home .picture{
+        margin-top: 80px;
+    }
+    #home .user h3{
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+    }
+    #home .user p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+/*=================================home end=================================*/
+/*=================================about star=================================t*/
+#about h3{
+    color: #fff;
+    margin: 180px 0 90px 0;
+}
+#about .cirle{
+    width: 90px;
+    height: 90px;
+    background:  rgba(255,255,255,.1);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    animation:cirle 1.5s ease-in-out infinite;
+}
+@keyframes cirle {
+    0%{transform: scale(1) ; background:  rgba(255,255,255,.2);}
+    50%{transform: scale(1.1); background:  rgba(255,255,255,.1);}
+    100%{transform: scale(1); background:  rgba(255,255,255,.2);}
+}
+#about .cirle i{
+    font-size: 40px;
+    color: #fff;
+    line-height: 90px;
+}
+#about  p{
+    font-size: 18px;
+    color: #fff;
+    padding-top: 15px;
+    margin-bottom: 80px;
+}
+#about h4{
+    font-size: 20px;
+    color: #fff;
+    line-height: 48px;
+}
+@media (max-width: 992px) {
+    #about h3{
+        margin: 100px 0 40px 0;
+    }
+    #about .cirle{
+        width: 60px;
+        height: 60px;
+    }
+    #about .cirle i{
+        font-size: 24px;
+        line-height: 60px;
+    }
+    #about h4{
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+@media (max-width: 768px) {
+    #about h3{
+        margin: 60px 0 20px 0;
+    }
+    #about .cirle{
+        width: 40px;
+        height: 40px;
+    }
+    #about .cirle i{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #about p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #about h4{
+        line-height: 28px;
+    }
+}
+#about .modal-content h4{
+    font-size: 20px;
+    color: #000110;
+    margin: 0;
+    padding: 0;
+}
+#about .modal-content p{
+    font-size: 18px;
+    color: #020202;
+    margin: 0;
+    padding: 0;
+}
+#about .container > a{
+    font-size: 20px;
+    color: #fff;
+}
+#about .container > a:hover,#about .container > a:focus{
+    text-decoration: none;
+}
+#about .container > a i{
+    animation:hand 2s ease-in-out infinite;
+}
+@keyframes hand {
+    0%{margin-left: 0}
+    50%{margin-left: 25px}
+    100%{margin-left: 0}
+}
+/*=================================about end=================================*/
+/*=================================skill start=================================*/
+#skill{
+    overflow: hidden;
+}
+#skill h3{
+    color: #fff;
+    margin: 180px 0 90px 0;
+}
+#skill .slide{
+    max-width: 1px;
+    height: 400px;
+    border-right: 1px dashed #fff;
+    margin: 0 auto;
+}
+#skill img{
+     width: 110px;
+     height: 120px;
+ }
+#skill .attle,#skill .bude,#skill .photoshop{
+    width:110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -380px  auto;
+    z-index: 11111111111111111;
+
+}
+#skill .attle{
+    animation:skill 5.5s ease-in-out infinite;
+}
+#skill .bude{
+    animation:bude 5.5s ease-in-out infinite;
+}
+#skill .photoshop{
+    animation:photo 5.5s ease-in-out infinite;
+}
+@keyframes photo {
+    0%{ margin-top: -190px}
+    35%{margin-top: -130px}
+    70%{margin-top: -380px}
+    100%{margin-top: -190px}
+}
+@keyframes bude {
+    0%{margin-top: -130px}
+    50%{margin-top: -380px}
+    100%{margin-top: -130px}
+}
+@keyframes skill {
+    0%{margin-top: -380px}
+    50%{margin-top: -130px}
+    100%{margin-top: -380px}
+}
+#skill .myself h4{
+    font-size: 20px;
+    color: #fff;
+    line-height: 36px;
+}
+#skill .myself h5{
+    margin-top: 60px;
+    color: #fff;
+}
+#skill .modal{
+    margin-top: 60px;
+}
+@media (max-width: 768px) {
+    #skill h3{
+        margin: 60px 0 20px 0;
+    }
+    #skill .slide{
+        display: none;
+    }
+    #skill .attle,#skill .bude,#skill .photoshop{
+        margin: 30px 0 0 0;
+        animation: none;
+    }
+    #skill .myself h5{
+        display: none;
+    }
+}
+/*=================================skill end=================================*/
+/*=================================undergo start=================================*/
+#undergo{
+    position: relative;
+}
+#undergo h3{
+    color: #fff;
+    margin: 160px 0 90px 0;
+}
+#undergo img{
+    width: 100%;
+    height: 290px;
+}
+#undergo .col-sm-8{
+    padding:25px 25px 0 25px ;
+}
+#undergo .col-sm-4{
+    height: 100%;
+}
+#undergo .col-sm-8 p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 38px;
+}
+#undergo .nav-tabs li{
+    width: 20%;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background:#945c4c;
+}
+#undergo .nav-tabs li a{
+    font-size: 20px;
+    color: #fff;
+}
+#undergo .nav-tabs li a:hover{
+    background:#945c4c ;
+}
+@media (max-width: 1200px) {
+    #undergo img{
+        height: 360px;
+    }
+}
+@media (max-width: 992px) {
+    #undergo h3{
+        margin: 110px 0 30px 0;
+    }
+    #undergo .col-sm-8 p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #undergo img{
+         height: 250px;
+     }
+}
+@media (max-width: 768px) {
+    #undergo img{
+        display: none;
+    }
+    #undergo h3{
+        margin: 80px 0 20px 0;
+        font-size: 16px;
+    }
+    #undergo h4{
+        display: none;
+    }
+}
+#undergo .container >img{
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    left: 180px;
+    bottom: 20px;
+    animation:img 5s ease-in-out infinite;
+    opacity: .5;
+}
+@keyframes img {
+    0%{left: 180px}
+   90%{width: 150px;height: 420px;left: 1120px;}
+    100%{opacity: 0;left: 180px}
+}
+/*=================================undergo end=================================*/
+/*=================================production start=================================*/
+#production .carousel{
+    max-width: 800px;
+    margin:  70px auto;
+}
+#production .carousel-caption h4{
+    color: #fff;
+}
+#production .carousel-caption{
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+#production .carousel-indicators{
+    margin-bottom: 35px;
+}
+#production h3{
+    color: #fff;
+    margin: 110px 0 90px 0;
+}
+#production h5{
+    font-size: 20px;
+    color: #fff;
+    animation:production 2s ease-in-out infinite;
+    margin: 0;
+
+}
+@keyframes production {
+    0%{ padding-top: 0;}
+    50%{padding-top: 15px;}
+    100%{ padding-top: 0;}
+
+}
+/*=================================production end=================================*/
+/*=================================phone start=================================*/
+#phone h3{
+    color: #fff;
+    margin: 160px 0 90px 0;
+}
+#phone .contact span{
+    font-size: 22px;
+    margin-right: 15px;
+    animation:span 3s ease-in-out infinite;
+}
+#phone .contact span:first-of-type{
+    color: red;
+}
+#phone .contact span:nth-of-type(2){
+    color: #3cf;
+}
+#phone .contact span:nth-of-type(3){
+    color: #6c0;
+}
+#phone .contact span:last-of-type {
+    color: #f63;
+}
+@keyframes span {
+    0%{margin-right: 15px}
+    50%{margin-right: 45px}
+    100%{margin-right: 15px}
+}
+#phone .container > p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 36px;
+    padding: 68px 0 52px 0;
+}
+#phone .popover{
+    width: 310px;
+    height: 390px;
+}
+#phone .popover img{
+    width: 100%;
+    height: 100%;
+}
+#phone a{
+    font-size: 22px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: #87b0a5;
+    transition: .3s;
+}
+#phone a:hover{
+    color: #fff;
+}
+#phone h5{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 25px;
+    animation:phone 2s ease-in-out infinite;
+
+}
+@keyframes phone {
+    0%{ margin-top: 25px;}
+    50%{margin-top: 35px;}
+    100%{ margin-top: 25px;}
+
+}
+@media (max-width: 768px) {
+    #phone h3{
+        margin: 60px 0 40px 0;
+    }
+    #phone .container > p{
+        padding: 20px 0 20px 0;
+    }
+    #phone .popover{
+        width: 250px;
+        height: 360px;
+    }
+}
+/*=================================phone end=================================*/
+.top{
+    position: fixed;
+    width: 34px;
+    height: 34px;
+    background: #87b0a5;
+    line-height: 34px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    bottom: 30px;
+    right: 30px;
+}

@@ -1,0 +1,940 @@
+@charset "UTF-8";
+/*================================header  start================================*/
+.header-top{
+    background: #7d7d7d;
+    border-bottom: 1px solid #b0b6b7;
+}
+.header-top  p a{
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    padding: 10px 0;
+}
+.header-top img{
+    top: 0;
+    left: 0;
+    height: 176px;
+}
+.center {
+    background: #d6d6d6;
+}
+.center input{
+    width: 194px;
+    height: 27px;
+    border: 1px solid #727172;
+}
+.center .search{
+    padding: 4px 38px 4px 9px;
+    background: #585657;
+    margin: 85px 7px 18px 0;
+}
+.center .search a img{
+    right: 6px;
+    top: 8px;
+}
+.nav{
+    border-top: 1px solid #949494;
+    border-bottom: 1px solid #949494;
+    background: #595757;
+}
+.nav ul li a{
+    color: #fff;
+    font-size: 19px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.nav ul li:hover a{
+    color: #c71b21 ;
+}
+.nav ul{
+    border-top: 1px solid #676566;
+    border-bottom: 1px solid #676566;
+}
+.nav ul li{
+    width: 123px;
+    padding: 14px 0 13px 0;
+    text-align: center;
+    border-left: 1px solid #818182;
+}
+.nav ul li:last-of-type{
+    border-right: 1px solid #818182;
+}
+/*================================header  end*================================/
+/*================================banner start================================*/
+.banner{
+    width: 1250px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: -1250px;
+}
+.banner img:first-of-type{
+    animation: img1 50s infinite linear;
+}
+.banner img:nth-of-type(2){
+    animation: img2 50s infinite linear;
+}
+.banner img:nth-of-type(3){
+    animation: img3 50s infinite linear;
+}
+.banner img:nth-of-type(4){
+    animation: img4 50s infinite linear;
+}
+.banner img:nth-of-type(5){
+    animation: img5 50s infinite linear;
+}
+.banner img:nth-of-type(6){
+    animation: img6 50s infinite linear;
+}
+.banner img:nth-of-type(7){
+    animation: img7 50s infinite linear;
+}
+.banner img:nth-of-type(8){
+    animation: img8 50s infinite linear;
+}
+.banner img:nth-of-type(9){
+    animation: img9 50s infinite linear;
+}
+.banner img:last-of-type{
+    animation: img10 50s infinite linear;
+}
+@keyframes img1 {
+    0%,8%{ left: 0;}
+    10%{left: 1250px;}
+    11%,98%{left: -1250px}
+    100%{left:0}
+}
+@keyframes img2 {
+    0%,8%{ left: -1250px;}
+    10%,18%{left: 0;}
+    20%{left: 1250px}
+    21%,100%{left:-1250px}
+}
+@keyframes img3 {
+    0%,18%{ left: -1250px;}
+    20%,28%{left: 0;}
+    30%{left: 1250px}
+    31%,100%{left:-1250px}
+}
+@keyframes img4 {
+    0%,28%{ left: -1250px;}
+    30%,38%{left: 0;}
+    40%{left: 1250px}
+    41%,100%{left:-1250px}
+}
+@keyframes img5 {
+    0%,38%{ left: -1250px;}
+    40%,48%{left: 0;}
+    50%{left: 1250px}
+    51%,100%{left:-1250px}
+}
+@keyframes img6 {
+    0%,48%{ left: -1250px;}
+    50%,58%{left: 0;}
+    60%{left: 1250px}
+    61%,100%{left:-1250px}
+}
+@keyframes img7 {
+    0%,58%{ left: -1250px;}
+    60%,68%{left: 0;}
+    70%{left: 1250px}
+    71%,100%{left:-1250px}
+}
+@keyframes img8 {
+    0%,68%{ left: -1250px;}
+    70%,78%{left: 0;}
+    80%{left: 1250px}
+    81%,100%{left:-1250px}
+}
+@keyframes img9 {
+    0%,78%{ left: -1250px;}
+    80%,88%{left: 0;}
+    90%{left: 1250px}
+    91%,100%{left:-1250px}
+}
+@keyframes img10 {
+    0%,88%{ left: -1250px;}
+    90%,98%{left: 0;}
+   100%{left:1250px}
+}
+.banner:hover img{
+    animation-play-state: paused;
+}
+/*================================banner end================================*/
+/*================================main start================================*/
+/*================================contant start ================================*/
+.contant{
+    background: #f2f2f2;
+}
+.contant h2{
+    font-size: 29px;
+    color: #444;
+    padding: 39px 0 26px 0;
+    font-weight: 200;
+}
+.contant div > a img{
+    margin: 39px 5px 0 0;
+}
+.contant .left{
+    width: 469px;
+    text-align: center;
+}
+.contant .left .img{
+ width: 469px;
+    height: 313px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contant .left .img img{
+    position: absolute;
+    left: -469px;
+}
+.contant .left .img img:first-of-type{
+    animation: banner1 25s infinite linear;
+}
+.contant .left .img img:nth-of-type(2){
+    animation: banner2 25s infinite linear;
+}
+.contant .left .img img:nth-of-type(3){
+    animation: banner3 25s infinite linear;
+}
+.contant .left .img img:nth-of-type(4){
+    animation: banner4 25s infinite linear;
+}
+.contant .left .img img:last-of-type{
+    animation: banner5 25s infinite linear;
+}
+@keyframes banner1 {
+    0%,15%{ left: 0;}
+    20%{left: 469px;}
+    21%,95%{left: -469px}
+    100%{left:0}
+}
+@keyframes banner2 {
+    0%,15%{left: -469px}
+    20%,35%{left: 0}
+    40%{left: 469px}
+    41%,100%{left: -469px}
+}
+@keyframes banner3 {
+    0%,35%{left: -469px}
+    40%,55%{left: 0}
+    60%{left: 469px}
+    61%,100%{left: -469px}
+}
+@keyframes banner4 {
+     0%,55%{left: -469px}
+     60%,75%{left: 0}
+     80%{left: 469px}
+     81%,100%{left: -469px}
+ }
+@keyframes banner5 {
+    0%,75%{left: -469px}
+    80%,95%{left: 0}
+   100%{left: 469px}
+}
+.contant .left .img:hover img{
+    animation-play-state: paused;
+}
+.contant .left img{
+    width: 100%;
+}
+.contant .left p{
+    font-size: 14px;
+    color: #333;
+    padding: 12px 0 18px 0;
+}
+.contant .right{
+    width:calc(100% - 469px );
+    padding-left: 40px;
+}
+.contant .right h3{
+    font-size: 22px;
+    color: #c71b21;
+    font-weight: 100;
+    padding: 8px 0 39px 0;
+    border-bottom: 1px solid #808080;
+}
+.contant .right ul{
+    margin-top: 11px;
+}
+.contant .right ul li a{
+    font-size: 17px;
+    line-height: 36px;
+    color: #000;
+}
+.contant .right ul li:hover a{
+    color: #c71b21;
+}
+.contant .right ul li img{
+    padding-right: 8px;
+}
+.contant .right ul li span{
+    font-size: 17px;
+    padding-right: 33px;
+}
+/*================================contant end================================*/
+/*================================box start================================*/
+.box .notice,.box .link{
+    width: 50%;
+}
+.box .notice a img{
+    margin-top: 56px;
+}
+.box .notice h2,.box .link h2{
+    font-size: 29px;
+    color: #444;
+    font-weight: 200;
+    padding: 55px 0 21px 0;
+}
+.box .notice ul li{
+    margin-bottom: 19px;
+}
+.box .notice ul li:last-of-type{
+    margin-bottom: 72px;
+}
+.box .notice ul li div{
+    border: 1px solid #aaa;
+    width: 63px;
+    height: 55px;
+    margin-right: 24px;
+    text-align: center;
+}
+.box .notice ul li div p{
+    font-size: 15px;
+    color: #fff;
+    background: #c71b21;
+    padding: 5px 0 7px 0;
+}
+.box .notice ul li div p:last-of-type{
+    color: #7e6666;
+    background: #fff;
+}
+.box .notice ul li p a{
+    font-size: 17px;
+    color: #000;
+line-height: 22px;
+}
+.box .notice ul li:hover p a{
+    color:#c71b21 ;
+}
+.box .notice ul li > p{
+    padding-top: 8px;
+    width: 400px;
+}
+.box .notice ul li span{
+    font-size: 17px;
+    color: #838387;
+    padding-top: 8px;
+}
+.box .link{
+    padding-left: 158px;
+}
+.box .link a div{
+    width: 219px;
+    height: 72px;
+    text-align: center;
+    margin-bottom: 19px;
+}
+.box .link a:first-of-type div{
+    background: #60c1bd;
+    margin-right: 28px;
+}
+.box .link a:nth-of-type(2) div{
+    background: #7d7b7b;
+}
+.box .link a:nth-of-type(3) div{
+    background: #f08337;
+    margin-right: 28px;
+}
+.box .link a:nth-of-type(4) div{
+    background: #c71b21;
+}
+.box .link a:nth-of-type(5) div{
+    background: #595757;
+    margin-right: 28px;
+}
+.box .link a:nth-of-type(6) div{
+    background: #d13c75;
+}
+.box .link a:last-of-type div{
+    background: #f08337;
+    width: 100%;
+    margin-top: 19px;
+}
+.box .link a:last-of-type div h3{
+   padding: 0 56px 0 63px;
+}
+.box .link a:last-of-type div select{
+    width: 187px;
+    height: 20px;
+    margin-top: 26px;
+}
+.box .link a div h3{
+    font-size: 22px;
+    color: #fff;
+    line-height: 72px;
+    font-weight: 200;
+}
+.box .link a img{
+    width: 100%;
+}
+/*================================box end================================*/
+/*================================main end================================*/
+/*================================ooter start================================*/
+.footer{
+    background: #7e7e7e;
+}
+.footer img:first-of-type{
+    width: 73px;
+    height: 71px;
+    padding: 19px 24px 22px 8px;
+}
+.footer p:first-of-type{
+    font-size: 13px;
+    color: #fff;
+    line-height: 27px;
+    margin-top: 20px;
+}
+.footer p:last-of-type{
+    font-size: 13px;
+    color: #fff;
+    line-height: 29px;
+    border-left: 1px solid #fff;
+    padding: 0 30px 0 8px;
+    margin-top: 32px;
+}
+.footer img:last-of-type{
+    padding-top: 19px;
+}
+/*================================footer end================================*/
+/*==========================================1250================================*/
+@media (min-width: 1250px) {
+    .wd {
+        width: 1250px;
+        margin: 0 auto;
+    }
+}
+/*======================================993到1249====================================*/
+@media  (min-width: 993px) and (max-width: 1249px) {
+    .wd {
+        width: 993px;
+        margin: 0 auto;
+    }
+    .banner{
+        width: 993px;
+        height: 358px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner img{
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: -993px;
+    }
+    .banner img:first-of-type{
+        animation: img1 50s infinite linear;
+    }
+    .banner img:nth-of-type(2){
+        animation: img2 50s infinite linear;
+    }
+    .banner img:nth-of-type(3){
+        animation: img3 50s infinite linear;
+    }
+    .banner img:nth-of-type(4){
+        animation: img4 50s infinite linear;
+    }
+    .banner img:nth-of-type(5){
+        animation: img5 50s infinite linear;
+    }
+    .banner img:nth-of-type(6){
+        animation: img6 50s infinite linear;
+    }
+    .banner img:nth-of-type(7){
+        animation: img7 50s infinite linear;
+    }
+    .banner img:nth-of-type(8){
+        animation: img8 50s infinite linear;
+    }
+    .banner img:nth-of-type(9){
+        animation: img9 50s infinite linear;
+    }
+    .banner img:last-of-type{
+        animation: img10 50s infinite linear;
+    }
+    @keyframes img1 {
+        0%,8%{ left: 0;}
+        10%{left: 993px;}
+        11%,98%{left: -993px}
+        100%{left:0}
+    }
+    @keyframes img2 {
+        0%,8%{ left: -993px;}
+        10%,18%{left: 0;}
+        20%{left: 993px}
+        21%,100%{left:-993px}
+    }
+    @keyframes img3 {
+        0%,18%{ left: -993px;}
+        20%,28%{left: 0;}
+        30%{left: 993px}
+        31%,100%{left:-993px}
+    }
+    @keyframes img4 {
+        0%,28%{ left: -993px;}
+        30%,38%{left: 0;}
+        40%{left: 993px}
+        41%,100%{left:-993px}
+    }
+    @keyframes img5 {
+        0%,38%{ left: -993px;}
+        40%,48%{left: 0;}
+        50%{left: 993px}
+        51%,100%{left:-993px}
+    }
+    @keyframes img6 {
+        0%,48%{ left: -993px;}
+        50%,58%{left: 0;}
+        60%{left: 993px}
+        61%,100%{left:-993px}
+    }
+    @keyframes img7 {
+        0%,58%{ left: -993px;}
+        60%,68%{left: 0;}
+        70%{left: 993px}
+        71%,100%{left:-993px}
+    }
+    @keyframes img8 {
+        0%,68%{ left: -993px;}
+        70%,78%{left: 0;}
+        80%{left: 993px}
+        81%,100%{left:-993px}
+    }
+    @keyframes img9 {
+        0%,78%{ left: -993px;}
+        80%,88%{left: 0;}
+        90%{left: 993px}
+        91%,100%{left:-993px}
+    }
+    @keyframes img10 {
+        0%,88%{ left: -993px;}
+        90%,98%{left: 0;}
+        100%{left:993px}
+    }
+    .banner:hover img{
+        animation-play-state: paused;
+    }
+    .contant .left .img{
+        width: 419px;
+        height: 283px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .contant .left .img img{
+        position: absolute;
+        left: -419px;
+    }
+    .contant .left .img img:first-of-type{
+        animation: banner1 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(2){
+        animation: banner2 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(3){
+        animation: banner3 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(4){
+        animation: banner4 25s infinite linear;
+    }
+    .contant .left .img img:last-of-type{
+        animation: banner5 25s infinite linear;
+    }
+    @keyframes banner1 {
+        0%,15%{ left: 0;}
+        20%{left: 419px;}
+        21%,95%{left: -419px}
+        100%{left:0}
+    }
+    @keyframes banner2 {
+        0%,15%{left: -419px}
+        20%,35%{left: 0}
+        40%{left: 419px}
+        41%,100%{left: -419px}
+    }
+    @keyframes banner3 {
+        0%,35%{left: -419px}
+        40%,55%{left: 0}
+        60%{left: 419px}
+        61%,100%{left: -419px}
+    }
+    @keyframes banner4 {
+        0%,55%{left: -419px}
+        60%,75%{left: 0}
+        80%{left: 419px}
+        81%,100%{left: -419px}
+    }
+    @keyframes banner5 {
+        0%,75%{left: -419px}
+        80%,95%{left: 0}
+        100%{left: 419px}
+    }
+    .contant .left .img:hover img{
+        animation-play-state: paused;
+    }
+    .nav ul li{
+        width: 98px;
+        font-size: 14px;
+    }
+    .contant .right{
+        padding-left: 0;
+    }
+    .contant .right h3{
+        font-size: 18px;
+    }
+    .contant .right ul li a{
+        font-size: 14px;
+    }
+    .box .link{
+        padding-left: 40px;
+    }
+    .box .link a div{
+        width: 180px;
+        height: 50px;
+    }
+    .box .link a div h3{
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .box .link  a img{
+        width: 390px;
+    }
+    .box .link a:last-of-type div{
+        width: 390px;
+    }
+    .box .link a:last-of-type div select{
+        width: 140px;
+        margin-top: 15px;
+    }
+    .box .notice ul li > p{
+        width: 300px;
+    }
+    .box .notice ul li p a{
+        font-size: 14px;
+    }
+    .box .notice ul li{
+        margin-bottom: 8px;
+    }
+    .box .notice ul li div{
+        width: 45px;
+        height: 50px;
+    }
+    .box .notice ul li div p{
+        font-size: 10px;
+    }
+}
+/*============================768到993=============================*/
+@media  (min-width: 768px) and (max-width: 993px) {
+    .wd {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .banner{
+        width: 769px;
+        height: 277px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner img{
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: -768px;
+    }
+    .banner img:first-of-type{
+        animation: img1 50s infinite linear;
+    }
+    .banner img:nth-of-type(2){
+        animation: img2 50s infinite linear;
+    }
+    .banner img:nth-of-type(3){
+        animation: img3 50s infinite linear;
+    }
+    .banner img:nth-of-type(4){
+        animation: img4 50s infinite linear;
+    }
+    .banner img:nth-of-type(5){
+        animation: img5 50s infinite linear;
+    }
+    .banner img:nth-of-type(6){
+        animation: img6 50s infinite linear;
+    }
+    .banner img:nth-of-type(7){
+        animation: img7 50s infinite linear;
+    }
+    .banner img:nth-of-type(8){
+        animation: img8 50s infinite linear;
+    }
+    .banner img:nth-of-type(9){
+        animation: img9 50s infinite linear;
+    }
+    .banner img:last-of-type{
+        animation: img10 50s infinite linear;
+    }
+    @keyframes img1 {
+        0%,8%{ left: 0;}
+    10%{left: 768px;}
+    11%,98%{left: -768px}
+    100%{left:0}
+    }
+    @keyframes img2 {
+    0%,8%{ left: -768px;}
+    10%,18%{left: 0;}
+    20%{left: 768px}
+    21%,100%{left:-768px}
+    }
+    @keyframes img3 {
+    0%,18%{ left: -768px;}
+    20%,28%{left: 0;}
+    30%{left: 768px}
+    31%,100%{left:-768px}
+    }
+    @keyframes img4 {
+    0%,28%{ left: -768px;}
+    30%,38%{left: 0;}
+    40%{left: 768px}
+    41%,100%{left:-768px}
+    }
+    @keyframes img5 {
+    0%,38%{ left: -768px;}
+    40%,48%{left: 0;}
+    50%{left: 768px}
+    51%,100%{left:-768px}
+    }
+    @keyframes img6 {
+    0%,48%{ left: -768px;}
+    50%,58%{left: 0;}
+    60%{left: 768px}
+    61%,100%{left:-768px}
+    }
+    @keyframes img7 {
+    0%,58%{ left: -768px;}
+    60%,68%{left: 0;}
+    70%{left: 768px}
+    71%,100%{left:-768px}
+    }
+    @keyframes img8 {
+    0%,68%{ left: -768px;}
+    70%,78%{left: 0;}
+    80%{left: 768px}
+    81%,100%{left:-768px}
+    }
+    @keyframes img9 {
+    0%,78%{ left: -768px;}
+    80%,88%{left: 0;}
+    90%{left: 768px}
+    91%,100%{left:-768px}
+    }
+    @keyframes img10 {
+    0%,88%{ left: -768px;}
+    90%,98%{left: 0;}
+    100%{left:768px}
+    }
+    .banner:hover img{
+    animation-play-state: paused;
+    }
+    .contant .left .img{
+    width: 340px;
+    height: 227px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .contant .left .img img{
+    position: absolute;
+    left: -340px;
+    }
+    .contant .left .img img:first-of-type{
+    animation: banner1 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(2){
+    animation: banner2 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(3){
+    animation: banner3 25s infinite linear;
+    }
+    .contant .left .img img:nth-of-type(4){
+    animation: banner4 25s infinite linear;
+    }
+    .contant .left .img img:last-of-type{
+    animation: banner5 25s infinite linear;
+    }
+    @keyframes banner1 {
+    0%,15%{ left: 0;}
+    20%{left: 340px;}
+    21%,95%{left: -340px}
+    100%{left:0}
+    }
+    @keyframes banner2 {
+    0%,15%{left: -340px}
+    20%,35%{left: 0}
+    40%{left: 340px}
+    41%,100%{left: -340px}
+    }
+    @keyframes banner3 {
+    0%,35%{left: -340px}
+    40%,55%{left: 0}
+    60%{left: 340px}
+    61%,100%{left: -340px}
+    }
+    @keyframes banner4 {
+    0%,55%{left: -340px}
+    60%,75%{left: 0}
+    80%{left: 340px}
+    81%,100%{left: -340px}
+    }
+    @keyframes banner5 {
+    0%,75%{left: -340px}
+    80%,95%{left: 0}
+    100%{left: 340px}
+    }
+    .contant .left .img:hover img{
+    animation-play-state: paused;
+    }
+    .header-top img{
+        width: 300px;
+        height: 120px;
+    }
+    .center{
+        height: 83px;
+    }
+    .center .search {
+        margin-top: 30px;
+    }
+    .nav ul li{
+        width: 75px;
+    }
+    .nav ul li a{
+        font-size: 12px;
+    }
+    .contant .left{
+        width: 360px;
+    }
+    .contant .right{
+        padding-left: 0;
+    }
+    .contant .right h3{
+        font-size: 16px;
+        padding-bottom: 19px;
+    }
+    .contant .right ul li a{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .contant .right ul li span{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .box .link {
+        padding-left: 40px;
+    }
+    .box .link  a div{
+        width: 158px;
+        height: 50px;
+    }
+    .box .link  a div h3{
+        font-size: 14px;
+        line-height: 50px;
+    }
+    .box .link a:last-of-type div select{
+        width: 80px;
+        margin-top: 15px;
+    }
+    .box .link a:last-of-type div h3{
+        padding: 0 30px;
+    }
+    .box .notice ul li > p{
+        width: 210px;
+    }
+    .box .notice ul li p a{
+        font-size: 14px;
+    }
+    .box .notice ul li  span{
+        font-size: 14px;
+    }
+    .box .notice ul li{
+        margin-bottom: 2px;
+    }
+    .box .notice ul li div{
+        width: 45px;
+        height: 50px;
+    }
+    .box .notice ul li div p{
+        font-size: 10px;
+    }
+    .box .notice h2,.box .link h2{
+        font-size: 18px;
+        padding: 20px 0 15px 0;
+    }
+}
+
+/*==================================小于767===============================*/
+@media(max-width:767px) {
+    .wd {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner {
+       display: none;
+    }
+    .header-top img{
+       width: 100%;
+        height: 90px;
+    }
+    .center{
+        height: 53px;
+    }
+    .center .search {
+        margin-top: 10px;
+    }
+    .nav ul li{
+        width: 9%;
+    }
+
+    .contant .left {
+        width: 100%;
+    }
+    .contant .left .img{
+        margin: auto;
+        width: 50%;
+    }
+    .contant .right{
+        width: 100%;
+    }
+    .box .notice{
+        width: 100%;
+    }
+    .box .link{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+    }
+
+    .box .notice ul li > p{
+        width: 80%;
+    }
+    .center .search{
+        display: none;
+    }
+}

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*=====================header start==========================*/
+.header .navbar{
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+}
+.mainNavBar{
+    background: #1c2b36;
+}
+.mainNavBar img{
+    max-width: 127px;
+}
+.mainNavBar .nav > li >  a:hover,.mainNavBar .nav > li >  a:focus,.mainNavBar .nav > .active >a{
+    background: #16232D !important;
+    color: #fff !important;
+}
+.mainNavBar .nav > li > a{
+    color: #869fb1;
+}
+.mainNavBar .dropdown-menu a{
+    background: #fff;
+    color: #323232;
+}
+.mainNavBar .dropdown-menu{
+    animation: inFadeDown .5s;
+}
+.mainNavBar .dropdown-menu a:hover{
+    background: #ecf0f1 !important;
+}
+.mainNavBar .login{
+    background: none;
+    color: #fff;
+}
+@keyframes inFadeDown {
+    0%{transform: translateY(-50px);opacity: 0}
+    100%{transform: translateY(0px);opacity: 1}
+}
+.mainNavBar .login:hover{
+    background: #131e25;
+}
+.mainNavBar .navbar-toggle{
+    border: 0;
+    outline: 0;
+    background: none;
+}
+.mainNavBar .navbar-toggle i{
+    background: #58666e !important;
+    width: 17px;
+    height: 2px;
+}
+.mainNavBar .navbar-toggle .icon-bar + .icon-bar{
+    margin-top: 3px;
+}
+.mainNavBar .navbar-toggle:hover,.mainNavBar .navbar-toggle:focus{
+    background: none;
+}
+.mainNavBar .navbar-toggle:hover i,.mainNavBar .navbar-toggle:focus i{
+    background: #2A6496 !important;
+}
+.subNavBar{
+    background: #fff;
+}
+.subNavBar .open > a{
+    background: #F6F8F8 !important;
+}
+.subNavBar form{
+    width: 21%;
+    padding-right: 0;
+
+}
+.subNavBar input,.subNavBar button{
+    background: #edf1f2;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.subNavBar button:focus{
+    outline: 0 !important;
+}
+.subNavBar button{
+    height: 34px;
+}
+.subNavBar input:focus{
+    box-shadow: none;
+}
+/*=====================header end============================*/
+
+
+
+/*=====================footer start============================*/
+.footer .top{
+    background: #1C2B36;
+}
+.footer .top h5{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.footer .top h5 span{
+    font-weight: 100;
+}
+/*兄弟选择器  +选择相邻的一个元素  ~选择相邻的所以相同的元素*/
+.footer .top h5 ~ a{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 4px;
+}
+.footer .top h5 ~ a:first-of-type{
+    background: rgba(58,88,152,.8);
+}
+.footer .top h5 ~ a:first-of-type:hover{
+    background: rgba(58,88,152,1);
+}
+.footer .top h5 ~ a:nth-of-type(2){
+    background: #abaadf;
+}
+.footer .top h5 ~ a:nth-of-type(3){
+    background: #cc382e;
+}
+.footer .top h5 ~ a:nth-of-type(4){
+    background: #ca1f28;
+}
+.footer .top h5 ~ a:last-of-type{
+    background: #f26722;
+}
+.footer .top h5 + ul a,.footer .bottom a{
+    color: #86abbb;
+}
+.footer .top h5 + ul a:hover,.footer .bottom a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.footer .top h5 + ul{
+    padding-left: 0;
+}
+
+.footer .bottom{
+    background: #263845;
+}
+.footer .bottom .col-xs-4{
+    color: #6a93a7;
+}
+.footer .top{
+    padding-bottom: 40px;
+}
+.footer .top h5{
+  padding: 50px 0 15px 0;
+}
+.footer .top li{
+    list-style: none;
+}
+.footer .bottom .col-xs-8{
+    padding: 28px 0;
+}
+.footer .bottom .col-xs-4{
+    padding-top: 28px;
+}
+/*=====================footer end============================*/

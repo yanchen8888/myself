@@ -1,0 +1,423 @@
+     <!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--让bootstrap兼容最新版本的ie-->
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--以移动设备优先  视窗                  宽度=设备宽度        缩放=1           最大缩放=1           禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<section id="home">
+    <div class="container text-center">
+    <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li  class="active" ><a href="#home"><i class="glyphicon glyphicon-home" title="首页" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                    <li ><a href="#about"><i class="glyphicon glyphicon-user" title="关于我" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                    <li ><a href="#skill"><i class="glyphicon glyphicon-list-alt" title="技能栏" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                    <li ><a href="#undergo"><i class="glyphicon glyphicon-road" title="人生经历" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                    <li ><a href="#production"><i class="glyphicon glyphicon-th" title="作品集" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                    <li ><a href="#phone"><i class="glyphicon glyphicon-envelope" title="联系我" data-toggle="tooltip" data-placement="bottom"></i></a></li>
+                </ul>
+        </div>
+    </nav>
+        <div class="picture wow bounceIn">
+            <img src="img/picture.jpg" alt=""/>
+        </div>
+        <div class="user">
+            <h3 class="wow bounceInUp">生活是一种绵延不绝的渴望，渴望不断上升，变得更伟大而高贵。</h3>
+            <p class="wow bounceInUp">我叫闫晨</p>
+            <p class="wow bounceInUp">一名前端研发工程师</p>
+            <p class="wow bounceInUp">1253292079@qq.com</p>
+        </div>
+        <a href="#about" class="toAbout"></a>
+    </div>
+</section>
+<section id="about">
+    <div class="container text-center">
+        <h3 class="wow fadeIn">关于我</h3>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 wow bounceIn">
+                <div class="cirle">
+                    <i class="glyphicon glyphicon-time"></i>
+                </div>
+                <p>年龄/19岁</p>
+            </div>
+            <div class="col-md-3 col-xs-6 wow bounceIn">
+                <div class="cirle">
+                    <i class="glyphicon glyphicon-edit"></i>
+                </div>
+                <p>学历/专科</p>
+            </div>
+            <div class="col-md-3 col-xs-6 wow bounceIn">
+                <div class="cirle">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                </div>
+                <p>坐标/北京</p>
+            </div>
+            <div class="col-md-3 col-xs-6 wow bounceIn">
+                <div class="cirle">
+                    <i class="glyphicon glyphicon-tree-conifer"></i>
+                </div>
+                <p>状态/待职</p>
+            </div>
+            <h4 class="wow rubberBand">两年学习互联网经验,一年半集训前端开发经验！
+                <br/>
+                熟悉ws开发,熟悉js,精通响应式页面开发！
+                <br/>
+                高效的自学能力,具备独立分析解决问题能力！
+                <br/>
+                具有坚持不懈的精神，沉迷于代码之中！</h4>
+        </div>
+        <a href=""   data-toggle="modal" data-target=".went">求职意向 <i class="glyphicon glyphicon-hand-left"></i></a>
+        <div class="modal went fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <span class="close" data-dismiss="modal">&times;</span>
+
+                    <h4>岗位：</h4>
+                    <p>前端开发</p>
+                        <h4>状态：</h4>
+                    <p>全职</p>
+                        <h4>薪资：</h4>
+                    <p>6k - 8k</p>
+                        <h4>性格：</h4>
+                    <p>开朗，乐观，阳光。</p>
+                        <h4>特点：</h4>
+                    <p>有坚持不懈的精神，做事持之以恒，有吃苦耐劳的精神，可以从小事做起。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skill">
+    <div class="container text-center">
+        <h3 class="wow bounceInRight">技能栏</h3>
+        <div class="row">
+            <div class="col-sm-3 col-xs-4 text-center  wow bounceInDown">
+                <div class="slide"></div>
+                <div class="attle" data-toggle="modal" data-target=".login">
+                    <img src="img/333.jpg" alt=""/>
+                </div>
+                <div class="modal login fade" tabindex="-1" data-backdrop="false">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <span class="close" data-dismiss="modal">&times;</span>
+                            <h4>基本信息</h4>
+                            <p>WebStorm 是jetbrains公司旗下一款JavaScript 开发工具。被广大中国JS开发者誉为"Web前端开发神器"、"最强大的HTML5编辑器"、"最智能的JavaScript IDE"等。与IntelliJ IDEA同源，继承了IntelliJ IDEA强大的JS部分的功能。</p>
+                            <h4>优势功能</h4>
+                            <h5>智能的代码补全</h5>
+                            <p>支持不同浏览器的提示，还包括所有用户自定义的函数(项目中)
+                                <br/>
+                                代码补全包含了所有流行的库，比如:JQuery, YUI, Dojo, Prototype, Mootools and Bindows。</p>
+                            <h5>html提示</h5>
+                            <p>大家经常在js代码中编写html代码，一般来说十分痛苦，不过有了智能提示，就爽多了。而且html里面还能有js提示。</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-4 text-center  wow bounceInDown">
+                <div class="slide"></div>
+                <div class="bude" data-toggle="modal" data-target=".text">
+                    <img src="img/222.png" alt=""/>
+                </div>
+                <div class="modal text fade" tabindex="-1" data-backdrop="false">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <span class="close" data-dismiss="modal">&times;</span>
+                            <h4>基本信息</h4>
+                            <p>JavaScript一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型。它的解释器被称为JavaScript引擎，为浏览器的一部分，广泛用于客户端的脚本语言，最早是在HTML（标准通用标记语言下的一个应用）网页上使用，用来给HTML网页增加动态功能。 </p>
+                            <h4>组成部分</h4>
+                            <p>核心（ECMAScript）、文档对象模型（Document Object Model，简称DOM）、浏览器对象模型（Browser Object Model，简称BOM）。</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-4 text-center  wow bounceInDown">
+                <div class="slide"></div>
+                <div class="photoshop" data-toggle="modal" data-target=".photo">
+                    <img src="img/11.jpg" alt=""/>
+                </div>
+                <div class="modal photo fade" tabindex="-1" data-backdrop="false">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content ">
+                            <span class="close" data-dismiss="modal">&times;</span>
+                            <h4>基本信息</h4>
+                            <p>Adobe Photoshop，简称"PS"，是由Adobe Systems开发和发行的图像处理软件。Photoshop主要处理以像素所构成的数字图像。使用其众多的编修与绘图工具，可以有效地进行图片编辑工作。ps有很多功能，在图像、图形、文字、视频、出版等各方面都有涉及。</p>
+                            <h4>平面设计</h4>
+                            <p>平面设计是PHOTOSHOP应用最为广泛的领域，无论是我们正在阅读的图书封面，还是大街上看到的招帖、海报，这些具有丰富图像的平面印刷品，基本上都需要PHOTOSHOP软件对图像进行处理。</p>
+                            <h4>图标制作</h4>
+                            <p>虽然使用PHOTOSHOP制作图标在感觉上有些大材小用，但使用此软件制作的图标的确非常精美。PHOTOSHOP制作的图标一般格式有png jpg  gif 等。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12 myself  wow bounceInDown">
+                <h4>熟练使用ws,javascript
+                    <br/>
+                    photoshop制作简单图标
+                    <br/>
+                    精通移动端，pad端
+                    <br/>
+                    pc端网页的开发
+                    <br/>
+                    擅长组件/插件开发
+                    <br/>
+                    能熟练应用js代码
+                    <br/>
+                    编码常思其健壮性
+                    <br/>
+                    扩展性，维护性</h4>
+
+                <h5> <i class="glyphicon glyphicon-hand-left"></i>详情介绍请点击左侧滑动的圆球</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="undergo">
+    <div class="container text-center">
+        <h3 class="wow bounceInRight">钟表，可以回到起点，却已不是昨天。</h3>
+        <ul class="nav nav-tabs  wow bounceInDown">
+            <li class="active"><a href="#p1" data-toggle="tab">小学</a></li>
+            <li><a href="#p2" data-toggle="tab">初中</a></li>
+            <li><a href="#p3" data-toggle="tab">高中</a></li>
+            <li><a href="#p4" data-toggle="tab">大学</a></li>
+            <li><a href="#p5" data-toggle="tab">毕业</a></li>
+        </ul>
+        <div class="tab-content  wow bounceInDown" style="border: 1px solid #ccc;border-top: 0">
+            <div id="p1" class="tab-pane fade active in">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/xx.jpg" alt=""/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>岁月如梭，眼看着我们六年的小学生活就要结束了，所剩的时间也在一点点流逝，让人忍不住想要好好珍惜剩下和老师，同学们，以及母校在一起的日子。当六年的小学生活将画上完美的句号时，面对离别，有太多的不舍。不舍朝夕相处的同学，不舍循循善诱的老师，不舍校园里熟悉的一草一木。六年的小学生活就像一本书，会永远封存在记忆里。</p>
+                        <p class="text-right">-----小学</p>
+                    </div>
+                </div>
+            </div>
+                <div id="p2" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/cz.jpeg" alt=""/>
+                        </div>
+                        <div class="col-sm-8">
+                            <p>初中的生活就像五味瓶一样，不仅有酸、有甜、有苦、还有辣！  </p>
+                            <p>我们要离开了，总是这样，在望不到头的人海中，我们匆匆擦身，不能多停留片刻。安妮宝贝说过：时间可以治愈一切伤口。我们是会疼痛，却奈何不了命运的捉弄，相册中记录着往日的笑靥，叛逆不屈，在黑暗中摸索，但总有人陪伴着，就不会孤寂。我深信，离别无法带走我们生命中最重要的部分。</p>
+                            <p class="text-right">-----初中</p>
+                        </div>
+                    </div>
+                </div>
+            <div id="p3" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/gz.jpg" alt=""/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>时光像水中的倒影，一晃三年就过去了。昨日那埋怨时间过的太慢的情素似乎还游移在脑际，而今艰苦的社会生活正在向我们走来，蓦然回首，感慨颇多。</p>
+                        <p>高三的一年让我懂得了真正的目标，浑浑噩噩的日子只是生存，但我们要的却是生活，谁不希望自己的生活过得高质量，那就必须从高中这个转折点开始，一步步地往下走，最终在你眼前的将是光明大道。</p>
+                        <p class="text-right">-----高中</p>
+                    </div>
+                </div>
+            </div>
+            <div id="p4" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/dx.jpg" alt=""/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>曾经是多么的盼望着早些离开校园、离开宿舍、离开课堂、离开书本……离开学生的称呼……，但到了真正不得不离开的那一刹那，才知道，自己对这片土地是多么的留念。在这里，留下了我最最美好的回忆和记忆。</p>
+                        <p>二年时间，不知不觉已到尽头，未来还有很长的路要走，带着美好的记忆迎接明天的太阳，相信自己，努力把握，永远追随太阳的脚。</p>
+                        <p class="text-right">-----大学</p>
+                    </div>
+                </div>
+            </div>
+            <div id="p5" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/by.jpg" alt=""/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>毕业了。。。自己的学习生涯结束了！</p>
+                        <p>梦想可以通过一定的方式和途径，通过自己的努力和拼搏成为现实。梦想最大的意义是给予人们一个方向，一个目标。如果只把梦想当做梦，那么这样的人生可以说没有什么亮点。梦想使人伟大，人的伟大就是把梦想作为目标来执着的追求！</p>
+                        <p>新生活，新工作，我来了！我准备好了！加油！</p>
+                        <p class="text-right">-----自己</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/ren.png" alt=""/>
+    </div>
+</section>
+<section id="production">
+    <div class="container text-center">
+        <h3 class="wow bounceInRight">作品集</h3>
+        <div class="carousel slide wow bounceInDown" id="banner">
+            <div class="carousel-inner ">
+                <div class="item active">
+                    <a href="时光网络科技/index.html">
+                    <img src="img/s1.png" alt=""/>
+                    <div class="carousel-caption">
+                        <h4>漯河时光科技网络</h4>
+                        <p>运用了一点走一屏的效果，wow入场动画，loading加载完后的效果等等</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="0717整站/index.html">
+                    <img src="img/s2.png" alt=""/>
+                    <div class="carousel-caption">
+                        <h4>corster 官方网页</h4>
+                        <p>用了折叠隐藏导航条的功能，用了栅格系统响应式更加完美。页面跳转流畅。</p>
+                    </div>
+                        </a>
+                </div>
+                <div class="item">
+                    <a href="0614作业/eg1.html">
+                    <img src="img/s3.png" alt=""/>
+                    <div class="carousel-caption">
+                        <h4>Basic trade宣传网页</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="0615作业/eg1.html">
+                    <img src="img/s4.png" alt=""/>
+                    <div class="carousel-caption">
+                        <h4>AUR0 广告网页</h4>
+                    </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="0626/eg1.html">
+                    <img src="img/s5.png" alt=""/>
+                    <div class="carousel-caption">
+                        <h4>中华女子学院官方网站</h4>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#banner" data-slide-to="0" class="active"></li>
+                <li data-target="#banner" data-slide-to="1"></li>
+                <li data-target="#banner" data-slide-to="2"></li>
+                <li data-target="#banner" data-slide-to="3"></li>
+                <li data-target="#banner" data-slide-to="4"></li>
+            </ol>
+            <a href="#banner" data-slide="prev" class="carousel-control left">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+            <a href="#banner" data-slide="next" class="carousel-control right">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+        <h5 class="wow rubberBand"><i class="glyphicon glyphicon-hand-up">点击上方图片查看详情</i></h5>
+        </div>
+</section>
+<section id="phone">
+    <div class="container text-center">
+        <h3 class="wow bounceInRight">联系我</h3>
+        <div class="contact wow bounceInDown">
+            <span>灵感</span>
+            <span>代码</span>
+            <span>梦想</span>
+            <span>未来</span>
+        </div>
+        <p class=" wow bounceIn">
+            注重效率，偏爱敏捷开发
+            <br/>
+            喜欢尝试，期待新鲜事物
+            <br/>
+            前端即兴趣，兴趣即未来
+            <br/>
+            行路有良友，便是捷径
+            <br/>
+            带上我吧，一起看到更大的世界
+        </p>
+        <a class="wow bounceInDown" data-toggle="popover" data-content='<img src="img/qq.jpg" alt=""/>' data-html="true" data-placement="top" data-trigger="click" data-animation="false">
+            QQ
+        </a>
+        <a class="wow bounceInDown" data-toggle="popover" data-content='<img src="img/wx.jpg" alt=""/>' data-html="true" data-placement="top" data-trigger="click" data-animation="false">
+            微信
+        </a>
+        <a  class="wow bounceInDown"data-toggle="popover" data-content='<img src="img/dh.png" alt=""/>' data-html="true" data-placement="top" data-trigger="click" data-animation="false">
+            电话
+        </a>
+        <h5 class="wow bounceInDown"><i class="glyphicon glyphicon-hand-up"></i>点击即可联系到我！</h5>
+    </div>
+</section>
+<div class="top"id="top">
+    <i class="glyphicon glyphicon-arrow-up"></i>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    $(function (){
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    };
+</script>
+<script>
+    $(function (){
+        //点击导航实现滚屏效果
+        $('.navbar-nav a,.toAbout').click(function (){//给导航绑定点击事件
+            $('body,html').animate({//给body和html添加动画效果
+                scrollTop  : $(this.hash).offset().top
+            },500);
+            return false
+        })
+    });
+</script>
+<script>
+    $(function () {
+        $('#banner').carousel({
+            interval:3000
+        });
+    })
+</script>
+<script>
+    window.onload = function () {
+        var  aTop = document.getElementById('top');
+        aTop.onclick = fnl;
+        var  time;
+        function fn(){
+            var xx =document.body.scrollTop-- || document.documentElement.scrollTop--;
+            if(xx <= 0){
+                clearInterval(time)
+            }
+        }
+        function fnl(){
+            time = setInterval(fn,1);
+        }
+    };
+</script>
+</body>
+</html>

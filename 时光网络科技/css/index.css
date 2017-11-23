@@ -1,0 +1,589 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+body{
+    overflow: hidden;
+}
+body > section,body ,html,#home .carousel-bg{
+    height: 100vh;
+}
+body > section,#home .carousel-bg{
+    background: no-repeat center;
+    background-size: cover;
+}
+/*=======================home start===============================*/
+#home .navbar{
+    min-height: 80px;
+    background: none;
+    border-bottom: 0;
+    font-size: 2rem;
+}
+#home .navbar-right{
+    color: #00c2ff;
+    margin: 34px 15px 0 0;
+}
+#home .navbar-right:hover{
+    text-decoration: none;
+}
+@media (min-width: 1010px) {
+    #home .nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*transform: translate(-50%,-20%);*/
+        /*-webkit-transform: translate(-50%,-20%);*/
+        margin: -6px 0 0-210px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1009px) {
+    #home .nav{
+        margin: 34px 0 0 ;
+    }
+}
+#home .nav a{
+    color: #fff;
+    padding: 8px 15px;
+    margin-right: 3px;
+    transition: .3s;
+}
+#home .nav a:hover{
+    color: #00c2ff;
+}
+#home .nav a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+    transform: scale(0);
+    transition: .3s;
+}
+#home .nav a:hover:after{
+    transform: scale(1);
+}
+#home .nav .active a{
+    color: #00c2ff;
+    background: none;
+}
+#home .nav .active a:after{
+    transform: scale(1);
+}
+/*collapse*/
+#home .navbar-toggle{
+    margin: 30px;
+    border: 0;
+    background: none;
+}
+#home .navbar-toggle:hover,#home .navbar-toggle:focus{
+    background: rgba(0,0,0,.4);
+}
+#home .icon-bar{
+    background: #fff;
+}
+/*banner*/
+#home .item:first-of-type .carousel-bg{
+     background-image: url("../img/banner13.jpg");
+ }
+#home .item:nth-of-type(2) .carousel-bg{
+    background-image: url("../img/banner07.jpg");
+}
+#home .item:nth-of-type(3) .carousel-bg{
+    background-image: url("../img/banner05.jpg");
+}
+#home .item:nth-of-type(4) .carousel-bg{
+    background-image: url("../img/banner10.jpg");
+}
+#home .item:last-of-type .carousel-bg{
+    background-image: url("../img/banner02.jpg");
+}
+#home .carousel-bg{
+    background-attachment: fixed;
+}
+#home .carousel-caption h1{
+    font-size: 60px;
+    color: #00c2ff;
+    font-weight: bolder;
+    font-style: italic;
+}
+#home .carousel-caption h2{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 36px;
+}
+#home .carousel-caption h2 span{
+    color: #00c2ff;
+    font-size: 1.2em;
+}
+#home .carousel-caption p{
+    margin-top: 15px;
+}
+#home .carousel-caption{
+    top: 35%;
+}
+#home .carousel-indicators{
+    top: 80%;
+}
+#home .item{
+    left: 0;
+    opacity: .8;
+    transition-property:opacity;
+}
+#home .carousel-indicators .active{
+    background-color: #00c2ff;
+}
+#home div .active,#home .left,#home .right{
+    opacity: 1;
+}
+#home .toAbout{
+    display: block;
+    width: 18px;
+    height: 38px;
+    position: absolute;
+    z-index: 111111111;
+    bottom: 5%;
+    left: 50%;
+    margin: 0 0 0 -15px;
+}
+#home .toAbout:after,#home .toAbout:before{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-bottom: 2px solid #00c2ff;
+    border-left: 2px solid #00c2ff;
+    transform: rotate(-45deg);
+}
+#home .toAbout:after{
+    animation:about 1.5s ease-in-out infinite;
+}
+#home .toAbout:before{
+    animation:middle 1.5s ease-in-out infinite;
+    animation-delay: .2s;
+}
+@keyframes about {
+    0%{margin-top: -15px;opacity: 0}
+    75%{margin-top: -5px;opacity: 1}
+    100%{margin-top: -4px;opacity: 0}
+}
+@keyframes middle {
+    0%{margin-top: -10px;opacity: 0}
+    70%{margin-top: 10px;opacity: 1}
+    100%{margin-top: 11px;opacity: 0}
+}
+/*=========================home end====================================*/
+
+/*==============================about start=============================*/
+#about{
+    padding-top: 15%;
+    background-image: url(../img/banner03.jpg);
+    position: relative;
+}
+#about .nav-pills{
+    margin-bottom: 45px;
+}
+#about .tab-content{
+    color: #fff;
+    font-size: 1.4rem;
+}
+#about .tab-content h4{
+    color: #00c2ff;
+}
+#about li a{
+    background-color: rgba(0,194,255,.4);
+    color: #bbb;
+    border-radius: 0;
+    position: relative;
+}
+#about li a:hover{
+    color: #bbb;
+}
+#about .active a{
+    background: #00c2ff;
+    color: #fff;
+}
+#about .active a:hover{
+    color: #fff;
+}
+#about .active a:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #00c2ff;
+    border-left:8px solid transparent ;
+    border-right:8px solid transparent ;
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 8px);
+}
+#about .bot{
+    width: 167px;
+    height: 18%;
+    background: url("../img/robot.png")no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    animation: bot 10s linear infinite;
+}
+@keyframes bot {
+    0%{  right: 50px;}
+    48%{right: 50%;transform: rotateY(0deg)}
+    50%{right: 50%;transform: rotateY(180deg)}
+    98%{right: 50px;transform: rotateY(180deg)}
+    100%{right: 50px;transform: rotateY(0deg)}
+}
+@-webkit-keyframes bot {
+    0%{  right: 50px;}
+    48%{right: 50%;transform: rotateY(0deg)  -webkit-transform: rotateY(0deg)}
+    50%{right: 50%;transform: rotateY(180deg)  -webkit-transform: rotateY(180deg)}
+    98%{right: 50px;transform: rotateY(180deg)  -webkit-transform: rotateY(180deg)}
+    100%{right: 50px;transform: rotateY(0deg)  -webkit-transform: rotateY(0deg)}
+}
+@media (max-width: 768px) {
+    #about .col-md-6{
+        margin-top: 60px;
+    }
+    #home .carousel-caption h1{
+        font-size:36px;
+    }
+    #home .carousel-caption h2{
+        font-size: 28px;
+    }
+    #home .navbar-brand img{
+       width: 180px;
+    }
+    #about .nav-pills{
+        margin-bottom: 15px;
+    }
+    #home .navbar-toggle{
+      margin: 20px 20px 10px ;
+    }
+}
+/*============================about end======================*/
+
+/*===========================service start=============================*/
+#service{
+    background-image: url(../img/banner11.jpg);
+    overflow: hidden;
+}
+#service img{
+    margin: 25px auto 50px ;
+    width: 80%;
+}
+#service h2{
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    padding-top: 190px;
+    font-weight: bolder;
+}
+#service h2 span{
+    color: #00c2ff;
+    font-size: 1.2em;
+}
+#service i{
+    font-size: 48px;
+    color: #00c2ff;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+#service h3{
+    color: #fff;
+    padding-bottom: 20px;
+}
+#service p{
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    display: block;
+    top: -8px;
+    background: rgba(0,194,255,.85);
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 14px;
+    padding: 15px;
+    transform: scale(0);
+    transition: .4s;
+}
+#service .col-md-3{
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+#service .col-md-3:hover p{
+    transform: scale(1);
+}
+@media (max-width: 992px) {
+    #service h2{
+        padding-top: 120px;
+        font-size: 24px;
+    }
+    #service img,#service .col-md-3{
+        margin:0;
+    }
+    #service .col-md-3:hover p{
+        transform: scale(0);
+    }
+    #service .col-md-3:hover .item{
+        background: #00c2ff;
+    }
+    #service .col-md-3:hover i{
+        color: #fff;
+    }
+    #service i{
+        display: inline;
+         position: relative;
+        top: 8px;
+        left: 0;
+        margin-right: 15px;
+        font-size: 38px;
+    }
+    #service h3{
+        display: inline-block;
+        font-size: 28px;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 768px) {
+    #service h2{
+        font-size: 18px;
+        padding-top: 100px;
+    }
+    #service h3{
+        font-size: 18px;
+    }
+    #service i{
+        font-size: 32px;
+    }
+}
+/*============================service end=============================*/
+
+/*============================progress start=============================*/
+#progress{
+    background-image: url(../img/banner09.jpg);
+    overflow: hidden;
+}
+#progress img{
+    margin: 25px auto 50px ;
+    width: 80%;
+}
+#progress h2{
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    padding-top: 190px;
+    font-weight: bolder;
+}
+#progress h2 span{
+    color: #00c2ff;
+    font-size: 1.2em;
+}
+#progress i{
+    font-size: 48px;
+    color: #00c2ff;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+#progress h3{
+    color: #fff;
+    padding-bottom: 20px;
+}
+#progress p{
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    display: block;
+    top: -8px;
+    background: rgba(0,194,255,.85);
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 14px;
+    padding: 15px;
+    transform: scale(0);
+    transition: .4s;
+}
+#progress .col-md-3{
+    padding: 0 15px;
+    margin-bottom: 40px;
+}
+#progress .col-md-3:hover p{
+    transform: scale(1);
+}
+@media (max-width: 992px) {
+    #progress h2{
+        padding-top: 120px;
+        font-size: 24px;
+    }
+    #progress img,#progress .col-md-3{
+        margin:0;
+    }
+    #progress .col-md-3:hover p{
+        transform: scale(0);
+    }
+    #progress .col-md-3:hover .item{
+        background: #00c2ff;
+    }
+    #progress .col-md-3:hover i{
+        color: #fff;
+    }
+    #progress i{
+        display: inline;
+        position: relative;
+        top: 8px;
+        left: 0;
+        margin-right: 15px;
+        font-size: 38px;
+    }
+    #progress h3{
+        display: inline-block;
+        font-size: 28px;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+@media (max-width: 768px) {
+    #progress h2{
+        font-size: 18px;
+        padding-top: 100px;
+    }
+    #progress h3{
+        font-size: 18px;
+    }
+    #progress i{
+        font-size: 32px;
+    }
+}
+/*=============================progress end==============================*/
+
+/*============================customer start==============================*/
+#customer{
+    background-image: url(../img/banner04.jpg);
+}
+#customer .splitter img{
+    margin: 25px auto 50px ;
+    width: 80%;
+}
+#customer h2{
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    padding-top: 190px;
+    font-weight: bolder;
+}
+#customer h2 span{
+    color: #00c2ff;
+    font-size: 1.2em;
+}
+#customer .col-md-3 img,#customer p{
+    margin-bottom: 10px;
+    transition: .4s;
+}
+#customer p{
+    color: #00c2ff;
+}
+#customer .col-md-3 img:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 992px) {
+    #customer .col-md-3 img{
+        display: none;
+    }
+    #customer h2{
+        font-size: 24px;
+        padding-top: 110px;
+    }
+    #customer .splitter img{
+        margin: 0 0 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    #customer h2{
+        font-size: 18px;
+        padding-top: 80px;
+    }
+}
+/*============================customer end===================================*/
+
+/*============================contact start=================================*/
+#contact{
+    background-image: url(../img/banner01.jpg);
+}
+#contact .splitter img{
+    margin: 25px auto 50px ;
+    width: 80%;
+}
+#contact h2{
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    padding-top: 190px;
+    font-weight: bolder;
+}
+#contact h2 span{
+    color: #00c2ff;
+    font-size: 1.2em;
+}
+#contact .col-sm-4,#contact a{
+    color: #fff;
+}
+#contact p,#contact span{
+    margin-bottom: 10px;
+}
+#contact span{
+    margin-right: 8px;
+}
+#contact a{
+    text-decoration: underline;
+}
+#contact .btn-info{
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(0,194,255,.75);
+    border: 1px solid #00c2ff;
+    transition: .3s;
+    margin-top: 10px;
+}
+#contact .btn-info:hover{
+    background-color:#00c2ff ;
+}
+#contact .btn-danger{
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(255,73,0,.75);
+    margin: 15px 0;
+    border: #ff4900;
+    transition: .3s;
+}
+#contact .btn-danger:hover{
+    background-color:#ff4900 ;
+}
+#contact img{
+    padding: 0 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+@media (max-width: 992px) {
+    #contact h2{
+        font-size: 24px;
+        padding-top: 100px;
+    }
+    #contact .splitter img{
+        margin: 10px 0 15px 0;
+    }
+}
+@media (max-width: 768px) {
+    #contact h2{
+        font-size: 18px;
+        padding-top: 80px;
+    }
+}
+/*============================contact end===================================*/
